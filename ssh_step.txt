@@ -1,0 +1,11 @@
+1.sudo apt install openssh-server
+2.sudo systemctl enable --now ssh
+3.sudo systemctl status ssh
+4.sudo ufw allow ssh
+5.sudo ufw enable
+6.sudo nano /etc/ssh/sshd_config
+  Add this file In
+  Port 22
+  PermitRootLogin yes
+  PasswordAuthentication yes
+7.sudo systemctl restart ssh
